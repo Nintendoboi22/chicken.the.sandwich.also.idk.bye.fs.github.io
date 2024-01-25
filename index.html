@@ -125,15 +125,15 @@
         })
         }).catch(err => {
         })
-        //if(SHOW_ADS){
-          //sdk.adv.showFullscreenAdv({ callbacks: {} });
-          //sdk.adv.showBannerAdv();
-        //}
-        //else
-        //{
-          //sdk.adv.hideBannerAdv();
-        //}
-      //});
+        if(SHOW_ADS){
+          sdk.adv.showFullscreenAdv({ callbacks: {} });
+          sdk.adv.showBannerAdv();
+        }
+        else
+        {
+          sdk.adv.hideBannerAdv();
+        }
+      });
 
     function checkCom() {
       var isCom = 0;
