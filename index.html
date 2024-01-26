@@ -99,13 +99,13 @@
     var payments = null;
     var SHOW_ADS = false;
 
-     YaGames.init({
-      adv: {
-        onAdvClose: wasShown => {
-          console.info('adv closed!');
-        }
-      }
-    })
+    // YaGames.init({
+     // adv: {
+     //   onAdvClose: wasShown => {
+    //      console.info('adv closed!');
+   //     }
+  //    }
+ //   })
       .then(ysdk => {
         sdk = ysdk;
         ysdk.getPlayer({ signed: true }).then(_player => {
@@ -116,8 +116,8 @@
           payments = _payments;
           console.log("Purchasing True");
           payments.getPurchases().then(purchases => {
-          if (purchases.some(purchase => purchase.productID === 'remove_ads')) {
-              SHOW_ADS = false;
+      //    if (purchases.some(purchase => purchase.productID === 'remove_ads')) {
+      //        SHOW_ADS = false;
 
             }
         }).catch(err => {
@@ -311,11 +311,11 @@
 
 
   <script>
-    function showFullscrenAd() {
-      sdk.adv.showFullscreenAdv({
-        callbacks: {}
-      })
-    }
+ //   function showFullscrenAd() {
+   //   sdk.adv.showFullscreenAdv({
+     //   callbacks: {}
+     // })
+   // }
   </script>
 
   <script>
