@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Funny Shooter 2 | DachXD</title>
+    <title>Funny Shooter 2</title>
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
   </head>
@@ -97,7 +97,7 @@
     var player = null;
     var sdk;
     var payments = null;
-    var SHOW_ADS = true;
+    var SHOW_ADS = false;
 
      YaGames.init({
       adv: {
@@ -125,14 +125,14 @@
         })
         }).catch(err => {
         })
-        if(SHOW_ADS){
+    /*    if(SHOW_ADS){
           sdk.adv.showFullscreenAdv({ callbacks: {} });
           sdk.adv.showBannerAdv();
         }
         else
         {
           sdk.adv.hideBannerAdv();
-        }
+        } */
       });
 
     function checkCom() {
